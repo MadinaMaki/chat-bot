@@ -1,0 +1,132 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #082d52;
+    border-radius: 25px;
+}
+
+.container .chat-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #2c4570;
+}
+
+.container .chat-header img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.container .chat-header .info p {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.chat-header .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header .info .nickname {
+    margin: 0 10px;
+}
+
+.chat-header .info .status {
+    color: #0fad3f !important;
+    font-size: 15px;
+    margin: 0 10px !important;
+}
+
+
+.message-block {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.message-block p {
+    display: inline-block;
+    margin: 0;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: #2c4570;
+    align-self: flex-end;
+}
+
+.message-container {
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.answer-container {
+    width: 70%;
+    word-break: break-word;
+    white-space: pre-wrap;
+    align-self: flex-end;
+    padding: 10px 15px;
+    background-color: #2c4570;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+/* .answer-container .answer {
+    color: #ffffff;
+} */
+
+.container .chat-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container .chat-footer input {
+    width: 400px;
+    padding: 12px 18px;
+    margin: 0 5px;
+    border: 1px solid #2c4570;
+    border-radius: 10px;
+    background-color: #2c4570;
+    color: #d1e0ff;
+}
+
+.container .chat-footer input::placeholder {
+    color: #d1e0ff;
+}
+
+.container .chat-footer input:focus {
+    border: 1px solid #45a4e0;
+}
+
+.container .chat-footer .sending-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #45a4e0;
+    border-radius: 10px;
+    color: #d1e0ff;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+
+
