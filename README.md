@@ -1,2 +1,2 @@
 # Chat-Bot
-My first project
+My first chat-bot project
