@@ -1,6 +1,5 @@
 let questionInput = document.querySelector('.question-input');
 let send = document.querySelector('.sending-button');
-
 let messageBlock = document.querySelector('.message-block');
 
 send.addEventListener('click', function () {
@@ -25,16 +24,31 @@ send.addEventListener('click', function () {
         })
         .then(function (res) {
             console.log(res);
-
-            // let answer = document.createElement('p');
-            // answer.classList.add('answer');
             let answerContainer = document.createElement('pre');
             answerContainer.classList.add('answer-container');
-            // answerContainer.append(answer);
             messageBlock.append(answerContainer);
-
             answerContainer.innerHTML = res.answer.trim();
-    
             questionInput.value = '';
         })
 });
+
+
+// translator.value = localStorage.getItem('translation');
+//
+// buttonRus.addEventListener('click', function () {
+//     translator.value = 'Привет!'
+//
+//     localStorage.translation = translator.value;
+// });
+//
+// buttonEng.addEventListener('click', function () {
+//     translator.value = 'Hello!'
+//
+//     localStorage.translation = translator.value;
+// });
+//
+// buttonKaz.addEventListener('click', function () {
+//     translator.value = 'Салем!'
+//
+//     localStorage.translation = translator.value;
+// });

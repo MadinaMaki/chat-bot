@@ -6,7 +6,7 @@
 }
 
 body {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -51,10 +51,8 @@ body {
 
 .chat-header .info .status {
     color: #0fad3f !important;
-    font-size: 15px;
     margin: 0 10px !important;
 }
-
 
 .message-block {
     display: flex;
@@ -80,11 +78,12 @@ body {
 }
 
 .answer-container {
-    width: 70%;
+    max-width: 70%;
     word-break: break-word;
     white-space: pre-wrap;
     align-self: flex-end;
     padding: 10px 15px;
+    margin: 0;
     background-color: #2c4570;
     border-radius: 20px;
     color: #ffffff;
