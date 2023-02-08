@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-height: 500px;
     max-width: 950px;
     margin: 0 auto;
     padding: 20px;
@@ -55,36 +56,47 @@ body {
 
 .message-block {
     display: flex;
+    height: 500px;
     flex-direction: column;
     padding: 15px;
 }
 
-.message-block p {
-    display: inline-block;
+.message-block .welcome {
+    max-width: 30%;
     margin: 0;
     color: #ffffff;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 10px 15px;
     background-color: #2c4570;
-    align-self: flex-end;
 }
 
 .message-container {
+    align-self: flex-end;
     color: #ffffff;
+    background-color: #45a4e0;
     padding: 10px 15px;
-    border-radius: 20px;
-    margin: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 20px;
+    margin: 5px 0;
 }
 
 .answer-container {
-    max-width: 70%;
+    max-width: 40%;
     word-break: break-word;
     white-space: pre-wrap;
-    align-self: flex-end;
     padding: 10px 15px;
     margin: 0;
     background-color: #2c4570;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
 }
 
