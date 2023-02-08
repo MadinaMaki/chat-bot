@@ -4,11 +4,11 @@ let messageBlock = document.querySelector('.message-block');
 
 send.addEventListener('click', function () {
     let messageContainer = document.createElement('div');
-    let message = document.createElement('p');
-    messageContainer.append(message);
     messageBlock.append(messageContainer);
+    messageContainer.classList.add('message');
+    messageContainer.classList.add('question');
     messageContainer.innerHTML = questionInput.value;
-    messageContainer.classList.add('message-container');
+
 
     fetch('https://chat-gpt-example.vercel.app/makeRequest', {
         method: 'POST',
@@ -24,11 +24,15 @@ send.addEventListener('click', function () {
         })
         .then(function (res) {
             console.log(res);
-            let answerContainer = document.createElement('pre');
-            answerContainer.classList.add('answer-container');
-            messageBlock.append(answerContainer);
-            answerContainer.innerHTML = res.answer.trim();
+            let answerContainer = document.createElement('div');
+            answerContainer.classList.add('message');
+            let answerDiv = document.createElement('pre')
+            answerDiv.classList.add('answer');
 
+            answerContainer.append(answerDiv);
+            messageBlock.append(answerContainer);
+
+            answerDiv.innerHTML = res.answer.trim();
             questionInput.value = '';
         })
 });
