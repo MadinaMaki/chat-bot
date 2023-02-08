@@ -56,7 +56,6 @@ body {
 
 .message-block {
     display: flex;
-    height: 500px;
     flex-direction: column;
     padding: 15px;
 }
