@@ -31,24 +31,3 @@ send.addEventListener('click', function () {
             questionInput.value = '';
         })
 });
-
-
-// translator.value = localStorage.getItem('translation');
-//
-// buttonRus.addEventListener('click', function () {
-//     translator.value = 'Привет!'
-//
-//     localStorage.translation = translator.value;
-// });
-//
-// buttonEng.addEventListener('click', function () {
-//     translator.value = 'Hello!'
-//
-//     localStorage.translation = translator.value;
-// });
-//
-// buttonKaz.addEventListener('click', function () {
-//     translator.value = 'Салем!'
-//
-//     localStorage.translation = translator.value;
-// });
