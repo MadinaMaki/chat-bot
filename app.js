@@ -28,6 +28,7 @@ send.addEventListener('click', function () {
             answerContainer.classList.add('answer-container');
             messageBlock.append(answerContainer);
             answerContainer.innerHTML = res.answer.trim();
+
             questionInput.value = '';
         })
 });
