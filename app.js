@@ -8,7 +8,9 @@ send.addEventListener('click', function () {
     messageContainer.classList.add('message');
     messageContainer.classList.add('question');
     messageContainer.innerHTML = questionInput.value;
-
+    if(questionInput.value.trim()){
+        questionInput.value = ''
+    }
 
     fetch('https://chat-gpt-example.vercel.app/makeRequest', {
         method: 'POST',
@@ -16,7 +18,7 @@ send.addEventListener('click', function () {
             'Content-Type': 'application/json;charset=utf-8'
         },
         body: JSON.stringify({
-            question: questionInput.value
+            question: questionInput.value.trim()
         })
     })
         .then(function (response){
@@ -36,3 +38,4 @@ send.addEventListener('click', function () {
             questionInput.value = '';
         })
 });
+
