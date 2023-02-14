@@ -9,6 +9,11 @@ questionInput.addEventListener('keydown', function (event){
     }
 })
 
+send.addEventListener('click', function () {
+    submitQuestion();
+    questionInput.value = ''
+});
+
 function submitQuestion() {
     let messageContainer = document.createElement('div');
     messageBlock.append(messageContainer);
@@ -39,10 +44,7 @@ function submitQuestion() {
 
             answerDiv.innerHTML = res.answer.trim();
         })
+        .catch(function (){
+            alert('Ошибка!');
+        });
 }
-
-send.addEventListener('click', function () {
-    submitQuestion();
-    questionInput.value = ''
-});
-
