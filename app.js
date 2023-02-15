@@ -7,7 +7,7 @@ questionInput.addEventListener('keydown', function (event){
         submitQuestion();
         questionInput.value = '';
     }
-})
+});
 
 send.addEventListener('click', function () {
     submitQuestion();
@@ -41,7 +41,6 @@ function submitQuestion() {
             answerDiv.classList.add('answer');
             answerContainer.append(answerDiv);
             messageBlock.append(answerContainer);
-
             answerDiv.innerHTML = res.answer.trim();
         })
         .catch(function (){
